@@ -1,0 +1,9 @@
+2022-09-12 15:35:57,628 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LoggingDemoProjectApplication using Java 11.0.15 on TC19937556 with PID 59636 (C:\Users\TCMEHMAYDIN\Desktop\LoggingDemoProject\target\classes started by TCMEHMAYDIN in C:\Users\TCMEHMAYDIN\Desktop\LoggingDemoProject)
+2022-09-12 15:35:57,634 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2022-09-12 15:36:05,401 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LoggingDemoProjectApplication in 8.486 seconds (JVM running for 11.211)
+2022-09-12 15:36:57,493 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LoggingDemoProjectApplication using Java 11.0.15 on TC19937556 with PID 58452 (C:\Users\TCMEHMAYDIN\Desktop\LoggingDemoProject\target\classes started by TCMEHMAYDIN in C:\Users\TCMEHMAYDIN\Desktop\LoggingDemoProject)
+2022-09-12 15:36:57,497 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2022-09-12 15:37:02,469 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LoggingDemoProjectApplication in 5.456 seconds (JVM running for 7.547)
+2022-09-12 15:38:29,906 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LoggingDemoProjectApplication using Java 11.0.15 on TC19937556 with PID 56452 (C:\Users\TCMEHMAYDIN\Desktop\LoggingDemoProject\target\classes started by TCMEHMAYDIN in C:\Users\TCMEHMAYDIN\Desktop\LoggingDemoProject)
+2022-09-12 15:38:29,910 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2022-09-12 15:38:34,442 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LoggingDemoProjectApplication in 4.997 seconds (JVM running for 6.99)

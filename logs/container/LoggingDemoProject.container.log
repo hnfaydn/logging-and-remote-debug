@@ -1,0 +1,86 @@
+2022-09-13 17:14:26,477 INFO com.example.loggingdemoproject.api.UserApi [http-nio-8080-exec-1] log Request: REQUEST method = [GET] path = [/swagger-ui/index.html] 
+2022-09-13 17:14:26,570 INFO com.example.loggingdemoproject.api.UserApi [http-nio-8080-exec-3] log Request: REQUEST method = [GET] path = [/swagger-ui/index.css] 
+2022-09-13 17:14:26,571 INFO com.example.loggingdemoproject.api.UserApi [http-nio-8080-exec-2] log Request: REQUEST method = [GET] path = [/swagger-ui/swagger-ui.css] 
+2022-09-13 17:14:26,575 INFO com.example.loggingdemoproject.api.UserApi [http-nio-8080-exec-6] log Request: REQUEST method = [GET] path = [/swagger-ui/swagger-initializer.js] 
+2022-09-13 17:14:26,576 INFO com.example.loggingdemoproject.api.UserApi [http-nio-8080-exec-5] log Request: REQUEST method = [GET] path = [/swagger-ui/swagger-ui-standalone-preset.js] 
+2022-09-13 17:14:26,576 INFO com.example.loggingdemoproject.api.UserApi [http-nio-8080-exec-4] log Request: REQUEST method = [GET] path = [/swagger-ui/swagger-ui-bundle.js] 
+2022-09-13 17:14:26,795 INFO com.example.loggingdemoproject.api.UserApi [http-nio-8080-exec-7] log Request: REQUEST method = [GET] path = [/v3/api-docs/swagger-config] 
+2022-09-13 17:14:26,796 INFO com.example.loggingdemoproject.api.UserApi [http-nio-8080-exec-8] log Request: REQUEST method = [GET] path = [/swagger-ui/favicon-32x32.png] 
+2022-09-13 17:14:26,815 INFO com.example.loggingdemoproject.api.UserApi [http-nio-8080-exec-7] logResponse: RESPONSE  method = [GET] response body = [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8080/swagger-ui/oauth2-redirect.html, url=/v3/api-docs, validatorUrl=}]
+2022-09-13 17:14:26,843 INFO com.example.loggingdemoproject.api.UserApi [http-nio-8080-exec-9] log Request: REQUEST method = [GET] path = [/v3/api-docs] 
+2022-09-13 17:14:27,142 INFO com.example.loggingdemoproject.api.UserApi [http-nio-8080-exec-9] logResponse: RESPONSE  method = [GET] response body = [{"openapi":"3.0.1","info":{"title":"OpenAPI definition","version":"v0"},"servers":[{"url":"http://localhost:8080","description":"Generated server url"}],"paths":{"/users/add":{"post":{"tags":["user-api"],"operationId":"add","requestBody":{"content":{"application/json":{"schema":{"$ref":"#/components/schemas/CreateUserRequest"}}},"required":true},"responses":{"200":{"description":"OK","content":{"*/*":{"schema":{"$ref":"#/components/schemas/Result"}}}}}}},"/users/getall":{"get":{"tags":["user-api"],"operationId":"getAll","responses":{"200":{"description":"OK","content":{"*/*":{"schema":{"$ref":"#/components/schemas/Result"}}}}}}}},"components":{"schemas":{"CreateUserRequest":{"type":"object","properties":{"firstName":{"type":"string"},"lastName":{"type":"string"},"email":{"type":"string"}}},"Result":{"type":"object","properties":{"success":{"type":"boolean"},"message":{"type":"string"}}}}}}]
+2022-09-13 17:14:40,646 INFO com.example.loggingdemoproject.api.UserApi [http-nio-8080-exec-10] log Request: REQUEST method = [POST] path = [/users/add]  body = [CreateUserRequest(firstName=string, lastName=string, email=string@gmail.com)]
+2022-09-13 17:14:40,822 INFO com.example.loggingdemoproject.api.UserApi [http-nio-8080-exec-10] logResponse: RESPONSE  method = [POST] response body message = [User Added Successfully.] response body data = [CreateUserRequest(firstName=string, lastName=string, email=string@gmail.com)]
+2022-09-13 17:19:57,078 INFO com.example.loggingdemoproject.api.UserApi [http-nio-8080-exec-6] logResponse: RESPONSE  method = [POST] response body = [{timestamp=Tue Sep 13 17:19:57 TRT 2022, status=400, error=Bad Request, trace=org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('a' (code 97)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('a' (code 97)): was expecting comma to separate Object entries
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 4, column: 31]
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:391)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:343)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:185)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:160)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:133)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('a' (code 97)): was expecting comma to separate Object entries
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 4, column: 31]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:735)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:659)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextFieldName(UTF8StreamJsonParser.java:1056)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:398)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:184)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4674)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3682)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:380)
+	... 55 more
+, message=JSON parse error: Unexpected character ('a' (code 97)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('a' (code 97)): was expecting comma to separate Object entries
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 4, column: 31], path=/users/add}]

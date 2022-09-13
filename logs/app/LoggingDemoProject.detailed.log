@@ -1,0 +1,8 @@
+2022-09-13 17:14:15,318 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LoggingDemoProjectApplication using Java 11.0.15 on TC19937556 with PID 17932 (C:\Users\TCMEHMAYDIN\Desktop\LoggingDemoProject\target\classes started by TCMEHMAYDIN in C:\Users\TCMEHMAYDIN\Desktop\LoggingDemoProject)
+2022-09-13 17:14:15,334 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2022-09-13 17:14:20,238 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LoggingDemoProjectApplication in 5.377 seconds (JVM running for 8.442)
+2022-09-13 17:14:40,652 INFO com.example.loggingdemoproject.services.UserImpl [http-nio-8080-exec-10] Following email string@gmail.com has sent to email verification service.
+2022-09-13 17:14:40,653 INFO com.example.loggingdemoproject.services.UserImpl [http-nio-8080-exec-10] Following email string@gmail.com has verified.
+2022-09-13 17:14:40,654 INFO com.example.loggingdemoproject.services.UserImpl [http-nio-8080-exec-10] Following User id 0cce46d3-1ec7-4647-8b3f-16bb1b888765 has sent to User verification service.
+2022-09-13 17:14:40,654 INFO com.example.loggingdemoproject.services.UserImpl [http-nio-8080-exec-10] Following User id 0cce46d3-1ec7-4647-8b3f-16bb1b888765 has verified.
+2022-09-13 17:14:40,821 INFO com.example.loggingdemoproject.services.UserImpl [http-nio-8080-exec-10] string string with following user id 0cce46d3-1ec7-4647-8b3f-16bb1b888765 has been saved to database.
